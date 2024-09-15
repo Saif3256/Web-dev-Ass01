@@ -1,0 +1,64 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2px,2px,2px,2px;
+    padding: 2px,2px,2px,2px;
+    background-color:rgb(21, 145, 221);
+    font-size: 18px;
+}
+.Full-Page{
+
+
+    background-color:rgb(21, 145, 221) ;
+
+}
+
+.navbar {
+    padding: 10px 20px;
+    background-color: yellow;
+}
+
+.profile-header {
+    padding: 20px;
+    
+    color:whitesmoke;
+}
+
+.container {
+    padding: 20px;
+    align-items: center;
+}
+
+.skills-content ul {
+    list-style-type: none;
+    padding: 0;
+   
+}
+
+
+.skills-content li {
+    margin-bottom: 10px;
+    
+}
+
+footer {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.language-selector {
+    text-align: right;
+    padding: 10px 20px;
+    color: yellow;
+    background-color:yellow;
+}
+
+
+
+
+.social-media-container{
+
+    background-color: yellow;
+    color: black;
+    
+}
