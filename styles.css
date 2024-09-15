@@ -2,42 +2,31 @@ body {
     font-family: 'Times New Roman', Times, serif;
     margin: 2px,2px,2px,2px;
     padding: 2px,2px,2px,2px;
-    background-color:rgb(21, 145, 221);
+    
     font-size: 18px;
 }
-.Full-Page{
-
-
-    background-color:rgb(21, 145, 221) ;
-
+.Full-Page
+{
+background:radial-gradient(circle at 42.3% 39.3%, rgb(208, 244, 247) 0%,rgb(164, 183, 98) 100.2%);
 }
 
 .navbar {
     padding: 10px 20px;
-    background-color: yellow;
+    
 }
 
 .profile-header {
     padding: 20px;
     
-    color:whitesmoke;
-}
-
-.container {
-    padding: 20px;
-    align-items: center;
-}
-
-.skills-content ul {
-    list-style-type: none;
-    padding: 0;
+    color:black;
    
 }
 
-
-.skills-content li {
-    margin-bottom: 10px;
-    
+.container {
+    padding: 20px 20px;
+    align-items: center;
+    margin: 5px 5px 5px 5px;
+    font-size: 18px;
 }
 
 footer {
@@ -51,18 +40,11 @@ footer {
     text-align: right;
     padding: 10px 20px;
     color: yellow;
-    background-color:yellow;
+  
 }
 
 
 
-
-.social-media-container{
-
-    background-color: yellow;
-    color: black;
-    
-}
 
 
 .video-content {
@@ -71,7 +53,6 @@ footer {
 }
 
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .navbar-nav {
         text-align: center;
@@ -84,7 +65,7 @@ footer {
     }
 }
 
-/* Footer Styling */
+
 footer {
     background-color: #333;
     color: white;
@@ -135,7 +116,7 @@ footer {
     height: 24px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
