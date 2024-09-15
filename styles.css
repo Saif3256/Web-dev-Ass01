@@ -3,21 +3,35 @@ body {
     margin: 2px,2px,2px,2px;
     padding: 2px,2px,2px,2px;
     
-    font-size: 18px;
 }
 .Full-Page
 {
 background:radial-gradient(circle at 42.3% 39.3%, rgb(208, 244, 247) 0%,rgb(164, 183, 98) 100.2%);
+
 }
 
 .navbar {
     padding: 10px 20px;
-    
+    color:black;
+    background-color: #333;
 }
+.soft-skills{
+
+    display: inline-block;
+    text-align: left;
+    vertical-align:right;
+    margin: 100px 150px 100px 100px;
+}
+.hard-skills
+{
+    text-align: left;
+    display: inline-block;
+ margin: 100px 100px 100px 200px;
+ }
 
 .profile-header {
     padding: 20px;
-    
+   
     color:black;
    
 }
@@ -39,7 +53,8 @@ footer {
 .language-selector {
     text-align: right;
     padding: 10px 20px;
-    color: yellow;
+    color:black;
+    background-color: #333;
   
 }
 
