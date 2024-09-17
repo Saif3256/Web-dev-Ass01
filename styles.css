@@ -20,13 +20,13 @@ background:radial-gradient(circle at 42.3% 39.3%, rgb(208, 244, 247) 0%,rgb(164,
     display: inline-block;
     text-align: left;
     vertical-align:right;
-    margin: 100px 150px 100px 100px;
+    margin: 100px 0px 100px 300px;
 }
 .hard-skills
 {
     text-align: left;
     display: inline-block;
- margin: 100px 100px 100px 200px;
+ margin: 100px 100px 100px 400px;
  }
 
 .profile-header {
