@@ -1,19 +1,82 @@
+/* Global Styles */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 2px,2px,2px,2px;
-    padding: 2px,2px,2px,2px;
-    
-}
-.Full-Page
-{
-background:radial-gradient(circle at 42.3% 39.3%, rgb(208, 244, 247) 0%,rgb(164, 183, 98) 100.2%);
-
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #E2F3F5, #A4B762); /* Beautiful gradient background */
+    color: #333;
 }
 
+.Full-Page {
+    background-image: url('Images/Background.jpg'); /* Add the path to your background image */
+    background-size: cover;
+    background-position: center;
+  
+    min-height: 100vh;
+}
+
+.container{
+
+    font: 18px;
+}
+
+/* Header and Navigation */
+.profile-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.language-selector {
+   
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    z-index: 10;
+   
+}
+
+.language-selector select {
+    padding:10px;
+    font-size: 14px;
+   margin-left: 20px;
+
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
 
 /* About Section */
 .about-section {
-    padding: 60px 30px;  
+    padding: 60px 30px;
     text-align: center;
 }
 
@@ -31,13 +94,6 @@ background:radial-gradient(circle at 42.3% 39.3%, rgb(208, 244, 247) 0%,rgb(164,
     max-width: 900px;
     margin: 0 auto;
 }
-
-.navbar {
-    padding: 10px 20px;
-    color:black;
-    background-color: #333;
-}
-
 /* Skills Section */
 
 .headings-styling {
@@ -60,13 +116,13 @@ background:radial-gradient(circle at 42.3% 39.3%, rgb(208, 244, 247) 0%,rgb(164,
 
 /* Skill Cards */
 .card {
-    background: #948E99; 
-    background: -webkit-linear-gradient(to right, #2E1437, #948E99); 
-    background: linear-gradient(to right, #2E1437, #948E99); 
+    background: #948E99;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2E1437, #948E99); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    width: calc(33.333% - 20px);  
+    width: calc(33.333% - 20px);  /* Ensures 3 columns */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -82,13 +138,13 @@ background:radial-gradient(circle at 42.3% 39.3%, rgb(208, 244, 247) 0%,rgb(164,
 
 .card h3 {
     font-size: 22px;
-    color: rgb(240, 240, 240);
+    color: rgb(240, 240, 240); /* Lighter text for better contrast */
     margin-bottom: 10px;
 }
 
 .card p {
     font-size: 16px;
-    color: rgb(200, 200, 215); 
+    color: rgb(200, 200, 215); /* Softer text color */
 }
 
 .date-time {
@@ -98,18 +154,19 @@ background:radial-gradient(circle at 42.3% 39.3%, rgb(208, 244, 247) 0%,rgb(164,
     text-align: right;
 }
 
-
+/* Responsive Design for Skill Cards */
 @media (max-width: 1024px) {
     .card {
-        width: calc(50% - 20px);  
+        width: calc(50% - 20px);  /* 2 columns for medium screens */
     }
 }
 
 @media (max-width: 768px) {
     .card {
-        width: 100%;  
+        width: 100%;  /* Full width on smaller screens */
     }
 }
+
 
 /* Project Section */
 .projects-section {
@@ -156,51 +213,6 @@ iframe {
     height: auto; 
     border-radius: 8px; 
 }
-
-
-.profile-header {
-    padding: 20px;
-   
-    color:black;
-   
-}
-
-.container {
-    padding: 20px 20px;
-    align-items: center;
-    margin: 5px 5px 5px 5px;
-    font-size: 18px;
-}
-
-footer {
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-}
-
-
-.language-selector {
-    text-align: right;
-    padding: 10px 20px;
-    color:black;
-    background-color: #333;
-  
-}
-
-
-
-@media (max-width: 768px) {
-    .navbar-nav {
-        text-align: center;
-       
-    }
-
-    .video-content {
-        width: 100%;
-        padding: 10px;
-    }
-}
-
 /* Contact Section */
 .contact-section {
     padding: 60px 20px;
@@ -269,14 +281,19 @@ footer {
     height: 24px;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .video-card {
+        flex: 1 1 100%;
+    }
+
     .footer-container {
         flex-direction: column;
         text-align: center;
-    }
-    
-    .footer-left, .footer-center, .footer-right {
-        flex-basis: 100%;
-        margin-bottom: 20px;
     }
 }
