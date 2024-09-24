@@ -204,7 +204,7 @@ body {
 }
 
 .video-card {
-    flex: 1 1 1;
+    flex: 1;
     max-width: 400px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
