@@ -14,6 +14,10 @@
     <meta name="robots" content="index, follow">
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <head>
+          
+        </head>
+        
       </head>
       
 </head>
@@ -29,19 +33,21 @@
             </select>
         </div>
         
-        <nav class="navbar navbar-expand-lg ">
-            <div class="navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
-                </ul>
-            </div>
+        <nav>
+            <input type="checkbox" id="check" class="menu-toggle">
+            <label for="check" class="chk"><i class="fas fa-bars"></i></label>
+           
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#videos">Videos</a></li>
+            </ul>
         </nav>
+        
+        
     </header>
     
     
@@ -57,6 +63,11 @@
             <p id="about-text" class="about-text">
                 <!-- Dynamic content will be populated here -->
             </p>
+        </section>
+          
+        <section class="Section" id="education">
+            <div class="Section-title">Education</div>
+            <p class="about-text" id="education-content"></p>
         </section>
         
         <section id="skills" class="Section">
@@ -79,11 +90,7 @@
                 <!-- Dynamic certifications content will be populated here -->
             </div>
         </section>
-        
-        <section class="Section" id="education">
-            <div class="Section-title">Education</div>
-            <p class="education-content" id="education-content"></p>
-        </section>
+      
        
         <section class="video-section" id="videos">
             <div class="Section-title">Videos</div>
@@ -115,22 +122,30 @@
                     
                 </div>
                 <div class="footer-center">
+                    <ul>
+                        Email:
+                         <a href="#" style="display: block;">saifriaz1234@gmail.com</a> 
+                    </ul>
+                       
+                       
+                    <ul>
+                       Phone No:
+                       <a href="#">03184478052</a>  
+                    </ul>
+                
+                    <ul class="social-media">
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                      </ul>
+                  
+                 </div>
+                <div class="footer-right">
                     <ul class="footer-links">
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
                     </ul>
-                 </div>
-                <div class="footer-right">
-                   
-
-                        <a href="#" style="display: block;">Email: saifriaz1234@gmail.com</a> 
-                        <a href="#">Phone No: 03184478052</a>  
-                    
-                        <ul class="social-media">
-                            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                          </ul>
+                      
                 </div>
               
 
@@ -139,7 +154,20 @@
     </div>
 
     <script src="script.js"></script>
-   
+    <script>
+        // Select all the navigation links and the checkbox
+        const navLinks = document.querySelectorAll('nav ul li a');
+        const menuToggle = document.querySelector('.menu-toggle');
+      
+        // Add a click event listener to each link
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            // Uncheck the checkbox to hide the menu
+            menuToggle.checked = false;
+          });
+        });
+      </script>
+      
 
 </body>
 </html>

@@ -28,7 +28,6 @@ const data = {
     education: "Bachelor's Degree in Computer Science – Information Technology University (2022-2026)",
     
 };
-
 document.addEventListener('DOMContentLoaded', () => {
     // Get the language select element
     const languageSelect = document.getElementById('language-select');
