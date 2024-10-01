@@ -30,6 +30,9 @@ const data = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Get the language select element
+    const languageSelect = document.getElementById('language-select');
+    
     const aboutTextElement = document.getElementById('about-text');
     const skillsContainer = document.getElementById('skills-container');
     const projectsContainer = document.getElementById('projects-container');
@@ -37,13 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const educationElement = document.getElementById('education-content');
     const videoContainer = document.getElementById('video-container');
 
-    // Populate About Me section
-    const languageSelect = document.getElementById('language-select');
-    const updateAboutText = (lang) => {
-        aboutTextElement.textContent = data.aboutMe[lang];
-    };
+    // Function to update about text based on selected language
+    function updateAboutText(language) {
+        aboutTextElement.textContent = data.aboutMe[language];
+    }
 
-    // Initial load
+    // Initial load with default language (English in this case)
     updateAboutText(languageSelect.value);
 
     // Language change event
@@ -63,10 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         skillsContainer.appendChild(skillCard);
     });
-
-  
-    
-    
 
     // Populate Projects
     data.projects.forEach(project => {
@@ -99,6 +97,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Populate Education
     educationElement.textContent = data.education;
-
-   
 });

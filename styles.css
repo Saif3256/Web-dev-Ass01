@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #E2F3F5, #A4B762);
+   
     color: #333;
 }
 
@@ -44,15 +44,6 @@ body {
 }
 
 
-.navbar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
 .navbar ul li {
     display: inline;
 }
@@ -69,7 +60,6 @@ body {
     background-color: #555;
     border-radius: 5px;
 }
-
 
 /* Ensure section headings are not covered when hovering */
 .Section, .container {
@@ -112,6 +102,7 @@ body {
 
 .cards-container {
     display: flex;
+
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
@@ -119,7 +110,7 @@ body {
 }
 /* Skill Cards */
 .card {
-    background: #6B5341;
+   
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     overflow: hidden;
@@ -272,6 +263,49 @@ iframe {
 }
 
 /* Footer Section */
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media li {
+    margin-right: 20px;
+  }
+  
+  .social-media a {
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Add specific colors to each icon */
+  .social-media a i.fa-facebook-f {
+    color: #4267B2; /* Facebook Blue */
+  }
+  
+  .social-media a i.fa-linkedin-in {
+    color: #0077B5; /* LinkedIn Blue */
+  }
+  
+  .social-media a i.fa-twitter {
+    color: #1DA1F2; /* Twitter Blue */
+  }
+  
+  /* Hover effect for icons */
+  .social-media a:hover i.fa-facebook-f {
+    color: #3b5998; /* Darker Facebook Blue */
+  }
+  
+  .social-media a:hover i.fa-linkedin-in {
+    color: #005983; /* Darker LinkedIn Blue */
+  }
+  
+  .social-media a:hover i.fa-twitter {
+    color: #1A91DA; /* Darker Twitter Blue */
+  }
+  
 footer {
     background-color: #333;
     color: white;
