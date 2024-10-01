@@ -110,7 +110,7 @@ body {
 }
 /* Skill Cards */
 .card {
-    background: linear-gradient(to right, #2E1437, #948E99);
+    background: #6B5341;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     overflow: hidden;
@@ -149,6 +149,27 @@ body {
     font-size: 12px;
     margin-top: 8px;
     text-align: right;
+}
+
+/* Navbar: Adjust padding for smaller screens */
+@media (max-width: 768px) {
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 15px;
+    }
+
+    .language-selector {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .navbar-brand {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 
@@ -220,7 +241,7 @@ iframe {
 /* Contact Section */
 .contact-section {
     padding: 60px 20px;
-    background-color: #333;
+    background-color: #6B5341;
     color: #fff;
     text-align: center;
 }
