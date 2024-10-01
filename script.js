@@ -64,6 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
         skillsContainer.appendChild(skillCard);
     });
 
+  
+    
+    
+
     // Populate Projects
     data.projects.forEach(project => {
         const projectCard = document.createElement('div');

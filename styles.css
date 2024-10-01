@@ -25,11 +25,10 @@ body {
     padding: 10px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    
     top: 0;
     z-index: 1000;
 }
-
 .language-selector {
     position: absolute;
     top: 25px;
@@ -43,6 +42,7 @@ body {
     margin-left: 10px;
     cursor: pointer;
 }
+
 
 .navbar ul {
     list-style: none;
@@ -70,13 +70,29 @@ body {
     border-radius: 5px;
 }
 
+
+/* Ensure section headings are not covered when hovering */
+.Section, .container {
+    position: relative;
+    
+}
+
+/* Ensure the navbar dropdown doesn't overlap the sections when open */
+.navbar-collapse {
+    z-index: 10;
+}
+
+
 /* About Section */
-.about-section {
-    padding: 60px 30px;
+.Section {
+    
+    padding: 30px 30px ;
     text-align: center;
 }
 
-.about-title {
+.Section-title {
+    text-align: center;
+    margin-top: 20px;
     font-size: 36px;
     color: #333;
     font-weight: 600;
@@ -92,14 +108,7 @@ body {
 }
 
 /* Skills Section */
-.headings-styling {
-    font-size: 36px;
-    font-weight: 600;
-    color: black;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
+
 
 .cards-container {
     display: flex;
@@ -225,9 +234,11 @@ body {
 }
 
 .video-card {
-    flex: 1;
-    max-width: 400px;
-    padding: 10px;
+   display: flex;
+   direction:ltr;
+   margin:   10px;
+   
+    padding: 0 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     border-radius: 8px; 
 }
@@ -236,6 +247,11 @@ iframe {
     width: 100%; 
     height: auto; 
     border-radius: 8px; 
+}
+
+.education-content{
+
+    font: 18px;
 }
 
 /* Contact Section */
@@ -297,7 +313,7 @@ footer {
 }
 
 .social-media li {
-    display: inline;
+    display: inline-block;
     margin-right: 10px;
 }
 

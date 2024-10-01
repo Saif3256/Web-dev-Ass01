@@ -24,70 +24,65 @@
                 <option value="ar">Arabic</option>
             </select>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">My Profile</a>
-                <!-- Toggler for smaller screens -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+        
+        <nav class="navbar navbar-expand-lg ">
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+                </ul>
             </div>
         </nav>
     </header>
     
+    
 
-        <section class="about-section" id="home">
-            <div class="about-title" style="text-align: center;">Welcome to My Professional Profile</div>
+        <section class="Section" id="home">
+            <div class="Section-title" style="text-align: center;">Welcome to My Professional Profile</div>
             <p class="about-text">
                 Hi! I am Saif Riaz. Welcome to my portfolio! Here, you’ll discover my passion and creativity showcased through my work.
             </p>
         </section>
-        <section class="about-section" id="about">
-            <div class="about-title" style="text-align: center;">About Me</div>
+        <section class="Section" id="about">
+            <div class="Section-title" >About Me</div>
             <p id="about-text" class="about-text">
                 <!-- Dynamic content will be populated here -->
             </p>
         </section>
         
-        <section id="skills" class="container">
-            <h2 class="headings-styling">Skills</h2>
+        <section id="skills" class="Section">
+            <h2 class="Section-title">Skills</h2>
             <div class="cards-container" id="skills-container">
                 <!-- Dynamic skills content will be populated here -->
             </div>
         </section>
 
-        <section class="about-section" id="projects">
-            <div class="about-title">Projects</div>
+        <section class="Section" id="projects">
+            <div class="Section-title">Projects</div>
             <div class="cards-container" id="projects-container">
                 <!-- Dynamic projects content will be populated here -->
             </div>
         </section>
         
-        <section class="about-section" id="certifications">
-            <div class="about-title">Certifications & Trainings</div>
+        <section class="Section" id="certifications">
+            <div class="Section-title">Certifications & Trainings</div>
             <div class="cards-container" id="certifications-container">
                 <!-- Dynamic certifications content will be populated here -->
             </div>
         </section>
         
-        <section id="education" class="container">
-            <h2 class="headings-styling">Education</h2>
-            <p id="education-content"></p>
+        <section class="Section" id="education">
+            <div class="Section-title">Education</div>
+            <p class="education-content" id="education-content"></p>
         </section>
-
-        <section class="video-section">
-            <h2 class="headings-styling">Video</h2>
+       
+        <section class="video-section" id="videos">
+            <div class="Section-title">Videos</div>
             <div class="video-container">
                 <div class="video-card" id="video-container">
                     <div class="video-card">
@@ -107,40 +102,43 @@
             </div>
         </section>
 
-        <section id="contact" class="contact-container">
-            <h2 class="headings-styling">Contact</h2>
-            <p>Email: saifriaz1234@gmail.com</p>
-            <p>Phone no: 03184478052</p>
-            <p>
-                <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
-                <a href="https://github.com/Saif3256/Web-development-Assingment-1" target="_blank">GitHub</a>
-            </p>
-        </section>
+       
 
         <footer>
             <div class="footer-container">
                 <div class="footer-left">
                     <p>&copy; 2024 Saif Riaz. All rights reserved.</p>
+                    
                 </div>
                 <div class="footer-center">
                     <ul class="footer-links">
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms of Service</a></li>
                     </ul>
-                </div>
+                 </div>
                 <div class="footer-right">
+                   
+
+                        <a href="#">Email: saifriaz1234@gmail.com</a> 
+                        <a href="#">Phone No: 03184478052</a>  
+                    
                     <ul class="social-media">
+                       
                         <li><a href="https://www.facebook.com/" target="_blank"><img src="Images/Facebook.png" alt="Facebook"></a></li>
                         <li><a href="https://twitter.com/login" target="_blank"><img src="Images/Twiter.png" alt="Twitter"></a></li>
                         <li><a href="https://www.linkedin.com/login" target="_blank"><img src="Images/Linkeded.png" alt="LinkedIn"></a></li>
+                       
+
                     </ul>
                 </div>
+              
+
             </div>
         </footer>
     </div>
 
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+   
 
 </body>
 </html>
